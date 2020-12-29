@@ -1,6 +1,8 @@
-function Home () {
+import Teste from '../components/Teste';
+
+function Home() {
     return (
-        <h1>Home</h1>
+        <Teste />
     )
 }
 
