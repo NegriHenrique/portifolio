@@ -2,12 +2,12 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-const pages: React.FC = () => {
+const Index: React.FC = () => {
   return (
       <div>
-          <h1>Hi Love = ) </h1>
+          <h1>Portfolio<strong>APP</strong> </h1>
       </div>
   );
 }
 
-export default pages;
+export default Index;
