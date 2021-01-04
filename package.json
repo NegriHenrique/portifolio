@@ -1,29 +1,19 @@
 {
   "name": "portifolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NegriHenrique/portifolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NegriHenrique/portifolio/issues"
-  },
-  "homepage": "https://github.com/NegriHenrique/portifolio#readme",
   "dependencies": {
-    "next": "^10.0.3",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "next": "10.0.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "@types/node": "^14.14.14",
+    "@types/node": "^14.14.19",
     "@types/react": "^17.0.0",
     "typescript": "^4.1.3"
   }
