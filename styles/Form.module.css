@@ -1,0 +1,94 @@
+.Form{
+    margin-top: 2rem;
+    width: 100%;
+}
+.Form button{
+
+    background: var(--primary-color-gradient);
+    width: 100%;
+    border: 0;
+    height: 41px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    margin-top: 1.4rem;
+    border-radius: 0.3rem;
+    transition: background .5s ease-out;
+    background-size: 200%;
+}
+.Form button:hover{
+    background-position-x:100%;
+}
+
+.Form label{
+    color: var(--text-light-color);
+}
+
+.btnsRemember label{
+    font-weight: bold;
+    color: var(--text-secondary-color);
+}
+
+.inputBlock input{
+    display: block;
+    padding: 0.3rem ;
+    margin: 1.2rem 0 ;
+    width: 100%;
+}
+
+
+.Btns{
+    margin-bottom: 0.5rem;
+}
+.Btns input[type=checkbox] {
+    display:none;
+  }
+
+  .Btns label{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      
+  }
+
+.Btns  label[for="checkbox"]::before{
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    background-image: url('../public/check-btn/unchecked.svg');
+    background-size: contain;
+    margin-right: 0.4rem;
+}
+.Btns input:checked + label[for="checkbox"]::before{
+    content: '';
+
+  
+    background-image: url('../public/check-btn/checked.svg');
+    background-size: contain;
+}
+
+
+
+.ForgotLink{
+    color: var(--text-secondary-color);
+}
+
+.Register{
+    margin-top: 1.5rem;
+    display: block;
+}
+
+.Register a {
+    font-weight: bold;
+    transition: color .2s;
+}
+.Register a:hover{
+    color: var(--text-primary-color);
+}
+
