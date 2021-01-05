@@ -8,33 +8,33 @@ const Login: React.FC = () => {
 
     <div className={styles.containerLogin}>
          <section className={styles.wallpaperLogin}>
-          <h1>Welcome  <br/> Back</h1>
+          <h1>Bem vindo de volta!</h1>
 
          </section>
          <section className={styles.loginWrapper}>
               <h3>Login</h3>
-              <p>Welcome to login page nice  to meet you!</p>
+              <p>Bem vindo a página de Login, prazer em te conhecer = )</p>
 
               <form action="" className={formStyle.Form}>
                 
                   <div className={formStyle.inputBlock}>
-                      <label htmlFor="">User Name</label>
+                      <label htmlFor="">Usuário</label>
                       <input type="text" placeholder="Username@gmail.com"/>
                   </div>
                  
                   <div className={formStyle.inputBlock}>
-                      <label htmlFor="">Password</label>
-                      <input type="password" placeholder="Username@gmail.com"/>
+                      <label htmlFor="">Senha</label>
+                      <input type="password" placeholder="Password"/>
                   </div>  
                   
                   <div className={formStyle.btnsRemember}>
                     <div className={formStyle.Btns}>
                     
                     <input id="checkbox"type="checkbox"/>
-                    <label  htmlFor="checkbox">Remember ME</label>
+                    <label  htmlFor="checkbox">Lembrar Senha</label>
                     </div>    
                     <div>
-                    <a className={formStyle.ForgotLink} href="">Forgot Password?</a>
+                    <a className={formStyle.ForgotLink} href="">Esqueceu sua senha?</a>
                       </div>               
                   
                   </div>
