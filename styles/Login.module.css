@@ -1,64 +1,63 @@
-.wallpaperLogin{
-    background-image: var(--primary-color-gradient);
-    height: 100vh;
-    flex: 1;
-    display: none;
+.wallpaperLogin {
+  background-image: var(--primary-color-gradient);
+  height: 100vh;
+  flex: 1;
+  display: none;
 }
 
-.containerLogin{
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-   
+/* Caixa do Formulário */
+.containerLogin {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2rem;
 }
 
-.loginWrapper h3{
-    font-size: clamp(2.5rem, 3vw, 4rem);
-    color: var(--text-secondary-color);
-    font-weight: 800;
-    line-height: 4rem;
-
+.loginWrapper h3 {
+  font-size: clamp(2.5rem, 3vw, 4rem);
+  color: var(--text-secondary-color);
+  font-weight: 800;
+  line-height: 4rem;
 }
 .loginWrapper p {
-    color: var(--text-light-color);
-    line-height: 2rem;
+  color: var(--text-light-color);
+  line-height: 2rem;
 }
 
+.btnsRemember {
+  display: flex;
+  justify-content: space-between;
+}
 
-
-  
-
-  .btnsRemember{
-      display: flex;
-      justify-content: space-between;
+@media screen and (min-width: 992px) {
+  .loginWrapper {
+    width: calc(50%- -6rem);
+    padding: 0 3rem;
+  }
+  .containerLogin {
+    padding: 0;
   }
 
-  @media screen and (min-width: 992px){
-    .loginWrapper{
-        width: calc(50%- -6rem);
-        padding: 0 3rem;
-    }  
-    
-    .wallpaperLogin{
-          display: initial;
-          background: url('../public/wallpapers/login-guy.svg'), var(--primary-color-gradient);
-          background-repeat: no-repeat;
-          background-position: center center;
-      }
-      .wallpaperLogin h1{
-          color: white;
-          text-align: left;
-          max-width: 80%;
-          margin: 0 auto;
-          font-size: clamp(3rem, 2vw, 4rem);
-          margin-top: 1.2rem;
-      }
-
-      .containerLogin{
-          flex-direction: row;
-      }
-      
+  .wallpaperLogin {
+    display: initial;
+    background: url("../public/wallpapers/login-guy.svg"),
+      var(--primary-color-gradient);
+    background-repeat: no-repeat;
+    background-position: center center;
   }
+  .wallpaperLogin h1 {
+    color: white;
+    text-align: left;
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: clamp(3rem, 2vw, 4rem);
+    margin-top: 1.2rem;
+  }
+
+  .containerLogin {
+    flex-direction: row;
+  }
+}
