@@ -1,0 +1,9 @@
+-- Up
+CREATE TABLE WorkLink (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    workId INTEGER REFERENCES Work(id),
+    linkId INTEGER REFERENCES Link(id) 
+);
+
+-- Down
+DROP TABLE WorkLink;

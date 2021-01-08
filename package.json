@@ -3,18 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "node database.js && next dev",
+    "build": "node database.js && next build",
+    "start": "node database.js && next start"
   },
   "dependencies": {
     "next": "10.0.4",
+    "next-redux-wrapper": "^6.0.2",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "sqlite": "^4.0.19",
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.19",
     "@types/react": "^17.0.0",
+    "redux-devtools-extension": "^2.13.8",
     "typescript": "^4.1.3"
   }
 }
